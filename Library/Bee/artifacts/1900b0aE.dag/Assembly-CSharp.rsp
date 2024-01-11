@@ -358,11 +358,13 @@
 "Assets/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs"
 "Assets/Quirky Series Ultimate/_Scripts/RotateOnScroll.cs"
 "Assets/Scripts/AIAgent.cs"
+"Assets/Scripts/AIAgentSpawner.cs"
 "Assets/Scripts/AIAutonomousAgent.cs"
 "Assets/Scripts/AIDistancePerception.cs"
 "Assets/Scripts/AIKinematicMovement.cs"
 "Assets/Scripts/AIMovement.cs"
 "Assets/Scripts/AIPerception.cs"
+"Assets/Scripts/Utilities.cs"
 -langversion:9.0
 
 /deterministic

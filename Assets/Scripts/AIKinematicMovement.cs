@@ -6,7 +6,7 @@ public class AIKianmaticMovement : AIMovement
 {
     public override void ApplyForce(Vector3 force)
     {
-        acceleration += force;
+        Acceleration += force;
     }
 
     public override void MoveTowards(Vector3 target)
@@ -17,7 +17,7 @@ public class AIKianmaticMovement : AIMovement
 
     public override void Stop()
     {
-        velocity = Vector3.zero;
+        Velocity = Vector3.zero;
     }
 
     public override void Resume()
@@ -37,16 +37,16 @@ public class AIKianmaticMovement : AIMovement
 
     void LateUpdate()
     {
-        velocity += acceleration * Time.deltaTime;
-        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
+        Velocity += Acceleration * Time.deltaTime;
+        Velocity = Vector3.ClampMagnitude(Velocity, maxSpeed);
         //velocity = velocity.ClampMagnitude(minSpeed, maxSpeed);
-        transform.position += velocity * Time.deltaTime;
+        transform.position += Velocity * Time.deltaTime;
 
-        if (velocity.sqrMagnitude > 0.1f)
+        if (Velocity.sqrMagnitude > 0.1f)
         {
-            transform.rotation = Quaternion.LookRotation(velocity);
+            transform.rotation = Quaternion.LookRotation(Velocity);
         }
 
-        acceleration = Vector3.zero;
+        Acceleration = Vector3.zero;
     }
 }
