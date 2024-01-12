@@ -41,18 +41,18 @@ public class AIAutonomusAgent : AIAgent
         }
 
 
-        transform.position = Utilities.Wrap(transform.position, new Vector3( -10, -10, -10 ), new Vector3( 10, 10, 10 ));
+        transform.position = Utilities.Wrap(transform.position, new Vector3( -10, 1, -10 ), new Vector3( 10, 3, 10 ));
     }
 
     private Vector3 Seek(GameObject target)
     {
-        Vector3 direction = transform.position - target.transform.forward;
+        Vector3 direction = target.transform.position - transform.position;
         return GetSteeringForce(direction);
     }
 
     private Vector3 Flee(GameObject target)
     {
-        Vector3 direction = target.transform.position - transform.forward;
+        Vector3 direction = transform.position - target.transform.position;
         return GetSteeringForce(direction);
     }
 
