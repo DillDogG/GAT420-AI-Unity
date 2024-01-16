@@ -364,6 +364,7 @@
 "Assets/Scripts/AIKinematicMovement.cs"
 "Assets/Scripts/AIMovement.cs"
 "Assets/Scripts/AIPerception.cs"
+"Assets/Scripts/AIRaycastPerception.cs"
 "Assets/Scripts/Utilities.cs"
 -langversion:9.0
 

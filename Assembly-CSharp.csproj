@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\RotateOnScroll.cs" />
+    <Compile Include="Assets\Scripts\AIRaycastPerception.cs" />
     <Compile Include="Assets\Scripts\AIDistancePerception.cs" />
     <Compile Include="Assets\Scripts\AIKinematicMovement.cs" />
     <Compile Include="Assets\Scripts\AIAgent.cs" />

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class AIAutonomusAgent : AIAgent
 {
-    public AIPerception seekPerception = null;
-    public AIPerception fleePerception = null;
-    public AIPerception flockPerception = null;
+    [SerializeField] AIPerception seekPerception = null;
+    [SerializeField] AIPerception fleePerception = null;
+    [SerializeField] AIPerception flockPerception = null;
+    [SerializeField] AIPerception obstaclePerception = null;
 
     private void Update()
     {
@@ -41,8 +43,25 @@ public class AIAutonomusAgent : AIAgent
             }
         }
 
+        // obstacle avoidance
+        if (obstaclePerception != null)
+        {
+            if (((AIRaycastPerception)obstaclePerception).CheckDirection(Vector3.forward))
+            {
+                Vector3 open = Vector3.zero;
+                if (((AIRaycastPerception)obstaclePerception).GetOpenDirection(ref open))
+                {
+                    movement.ApplyForce(GetSteeringForce(open));
+                }
 
-        transform.position = Utilities.Wrap(transform.position, new Vector3( -10, 1, -10 ), new Vector3( 10, 3, 10 ));
+            }
+            //var gameObjects = obstaclePerception.GetGameObjects();
+        }
+        Vector3 acceleration = movement.Acceleration;
+        acceleration.y = 0;
+        movement.Acceleration = acceleration;
+
+        transform.position = Utilities.Wrap(transform.position, new Vector3( -10, -10, -10 ), new Vector3( 10, 10, 10 ));
     }
 
     private Vector3 Seek(GameObject target)

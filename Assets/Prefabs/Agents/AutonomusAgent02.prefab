@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5059282915595791785}
   - component: {fileID: 6982266410655462310}
   - component: {fileID: 8753813810867312299}
+  - component: {fileID: 957540324428348027}
   m_Layer: 0
   m_Name: AutonomusAgent02
   m_TagString: Agent02
@@ -52,6 +53,7 @@ MonoBehaviour:
   seekPerception: {fileID: 8753813810867312299}
   fleePerception: {fileID: 0}
   flockPerception: {fileID: 8753813810867312299}
+  obstaclePerception: {fileID: 957540324428348027}
 --- !u!65 &5059282915595791785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104,6 +106,28 @@ MonoBehaviour:
   tagName: Agent01
   distance: 5
   maxAngle: 45
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &957540324428348027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418170552022487519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20febabdf2b650b4c81d6bbc4d2220f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: 
+  distance: 5
+  maxAngle: 45
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  numRaycast: 12
 --- !u!1001 &5789922877546482730
 PrefabInstance:
   m_ObjectHideFlags: 0
