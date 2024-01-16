@@ -1,0 +1,302 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.16f1 (d2c21f0ef2f1) revision 13812255'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32433 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/dyarbrough/GAT420-AI-Unity
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+61271
+Successfully changed project path to: C:/Users/dyarbrough/GAT420-AI-Unity
+C:/Users/dyarbrough/GAT420-AI-Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13568] Host "[IP] 192.168.195.1 [Port] 0 [Flags] 2 [Guid] 1943387255 [EditorId] 1943387255 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-CCI648QA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13568] Host "[IP] 192.168.195.1 [Port] 0 [Flags] 2 [Guid] 1943387255 [EditorId] 1943387255 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-CCI648QA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 22.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/dyarbrough/GAT420-AI-Unity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8032 MB
+    Driver:   31.0.15.4633
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.062489 seconds.
+- Loaded All Assemblies, in  1.497 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 961 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.886 seconds
+Domain Reload Profiling: 3369ms
+	BeginReloadAssembly (491ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (133ms)
+	RebuildNativeTypeToScriptingClass (40ms)
+	initialDomainReloadingComplete (280ms)
+	LoadAllAssembliesAndSetupDomain (539ms)
+		LoadAssemblies (487ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (528ms)
+			TypeCache.Refresh (525ms)
+				TypeCache.ScanAssembly (492ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1887ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1721ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1309ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (302ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.415 seconds
+Refreshing native plugins compatible for Editor in 7.70 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.661 seconds
+Domain Reload Profiling: 3067ms
+	BeginReloadAssembly (309ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (928ms)
+		LoadAssemblies (769ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (345ms)
+			TypeCache.Refresh (292ms)
+				TypeCache.ScanAssembly (263ms)
+			ScanForSourceGeneratedMonoScriptInfo (42ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1662ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1326ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (68ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (169ms)
+			ProcessInitializeOnLoadAttributes (1013ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.6 KB). Loaded Objects now: 3566.
+Memory consumption went from 135.1 MB to 135.0 MB.
+Total: 3.266300 ms (FindLiveObjects: 0.211100 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.822200 ms  DeleteObjects: 0.133400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19707.301339 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_BoxingGlove_01.prefab
+  artifactKey: Guid(e9be0263a06856c4d96e5614c5650332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_BoxingGlove_01.prefab using Guid(e9be0263a06856c4d96e5614c5650332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55bf5eb85696a8562ce4b28a28bbbd00') in 0.402322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_Minigolf_Flag_01.prefab
+  artifactKey: Guid(df676aa57d0155744a9dbdd9d95e518d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_Minigolf_Flag_01.prefab using Guid(df676aa57d0155744a9dbdd9d95e518d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56afabe446b7f9761d0350d6c65c9ca') in 0.042599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_VR_Headset_03.prefab
+  artifactKey: Guid(65ae648227a9ee94eb38bd95dc1fc834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_VR_Headset_03.prefab using Guid(65ae648227a9ee94eb38bd95dc1fc834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c80e502b91265d43cb5602c47dc88d') in 0.039781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_Tennis_Ball_01.prefab
+  artifactKey: Guid(7ca3e8e40aad13142908e805c49530dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_Tennis_Ball_01.prefab using Guid(7ca3e8e40aad13142908e805c49530dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85d0bfdd70b4e2e07e49fff2e2d5355') in 0.042493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_TableTennis_Paddle_01.prefab
+  artifactKey: Guid(e79c21f05549879408bbee580e3f5b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/NewAssets/SM_Prop_TableTennis_Paddle_01.prefab using Guid(e79c21f05549879408bbee580e3f5b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a768590e050c92b8da71c06731b2f06') in 0.057061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 5.957165 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_C4_01.prefab
+  artifactKey: Guid(776a3a4c08c9c444f9572fa80fb828d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_C4_01.prefab using Guid(776a3a4c08c9c444f9572fa80fb828d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b19c0d83d94eed1102040f981efef8') in 0.094385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Tree_Round_01.prefab
+  artifactKey: Guid(6796c808204bd0d448c1f3bf10a57ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Tree_Round_01.prefab using Guid(6796c808204bd0d448c1f3bf10a57ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfa272c22e97250ef6ab2f0c9f3c637') in 0.059457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Pistol_01.prefab
+  artifactKey: Guid(b017a00e018b1bc4f9ef2a84e5644a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Pistol_01.prefab using Guid(b017a00e018b1bc4f9ef2a84e5644a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400bf6e5ecf6ae3d2eae163119ba5864') in 0.072323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Rifle_01.prefab
+  artifactKey: Guid(c25ac4fdc903e7d49a7520930673ecd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Rifle_01.prefab using Guid(c25ac4fdc903e7d49a7520930673ecd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820c90ca095f96bf55bbc3c0005a5930') in 0.050472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Crate_Question_01.prefab
+  artifactKey: Guid(d19c36dc5f97d444fa54380cf09bd828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Crate_Question_01.prefab using Guid(d19c36dc5f97d444fa54380cf09bd828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1233f2a770e3de6467693ff27e41ac2a') in 0.071823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_MetalPlate_02.prefab
+  artifactKey: Guid(082e2c0af8874a44dae3434e8d9bf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_MetalPlate_02.prefab using Guid(082e2c0af8874a44dae3434e8d9bf93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3df7695b8c9c968015ecb876f0a2a90') in 0.052163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000545 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Switch_Remote_01.prefab
+  artifactKey: Guid(aca95b7144ebd9d43b90bd779762e272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Switch_Remote_01.prefab using Guid(aca95b7144ebd9d43b90bd779762e272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b452f5cdee838421180fb1344c42b1db') in 0.066020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Pipe_Curve_02.prefab
+  artifactKey: Guid(f643a3f3b0194c441969caf694be2643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Pipe_Curve_02.prefab using Guid(f643a3f3b0194c441969caf694be2643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d200ff65d0777515902d8b6967c172') in 0.050727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Tree_Bush_01.prefab
+  artifactKey: Guid(49b9066be53e5314798b57987364d700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Externals/PolygonPrototype/Prefabs/Props/SM_Prop_Tree_Bush_01.prefab using Guid(49b9066be53e5314798b57987364d700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2952bbdb6dd5973d83a8c76b2bc524ef') in 0.058557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

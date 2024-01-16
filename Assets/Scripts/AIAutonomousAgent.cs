@@ -37,6 +37,7 @@ public class AIAutonomusAgent : AIAgent
             {
                 movement.ApplyForce(Cohesion(gameObjects));
                 movement.ApplyForce(Separation(gameObjects, 3));
+                movement.ApplyForce(Alignment(gameObjects));
             }
         }
 
@@ -94,6 +95,8 @@ public class AIAutonomusAgent : AIAgent
         Vector3 averageVelocity = velocities / neighbors.Length;
         return GetSteeringForce(averageVelocity);
     }
+
+
 
     public Vector3 GetSteeringForce(Vector3 direction)
 

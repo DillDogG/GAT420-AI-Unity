@@ -51,7 +51,7 @@ MonoBehaviour:
   movement: {fileID: 6982266410655462310}
   seekPerception: {fileID: 0}
   fleePerception: {fileID: 8753813810867312299}
-  flockPerception: {fileID: 0}
+  flockPerception: {fileID: 8753813810867312299}
 --- !u!65 &5059282915595791785
 BoxCollider:
   m_ObjectHideFlags: 0
