@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\AIAgent.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\QuirkySeriesDemo.cs" />
     <Compile Include="Assets\Scripts\AIAutonomousAgent.cs" />
+    <Compile Include="Assets\Scripts\AISphereCastPerception.cs" />
     <Compile Include="Assets\Scripts\Utilities.cs" />
     <Compile Include="Assets\Scripts\AIAgentSpawner.cs" />
     <Compile Include="Assets\Scripts\AIMovement.cs" />
