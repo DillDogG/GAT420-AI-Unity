@@ -64,12 +64,19 @@
     <Compile Include="Assets\Scripts\AIRaycastPerception.cs" />
     <Compile Include="Assets\Scripts\AIDistancePerception.cs" />
     <Compile Include="Assets\Scripts\AIKinematicMovement.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavDijkstra.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavNodeEditor.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavPath.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavAStar.cs" />
     <Compile Include="Assets\Scripts\AIAgent.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\QuirkySeriesDemo.cs" />
     <Compile Include="Assets\Scripts\AIAutonomousAgent.cs" />
     <Compile Include="Assets\Scripts\AISphereCastPerception.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavAgent.cs" />
     <Compile Include="Assets\Scripts\Utilities.cs" />
     <Compile Include="Assets\Scripts\AIAgentSpawner.cs" />
+    <Compile Include="Assets\Scripts\Nav\AINavNode.cs" />
+    <Compile Include="Assets\Scripts\AIInspector.cs" />
     <Compile Include="Assets\Scripts\AIMovement.cs" />
     <Compile Include="Assets\Scripts\AIPerception.cs" />
   </ItemGroup>
@@ -77,6 +84,7 @@
     <None Include="Assets\Externals\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\Quirky Series Ultimate\_Shader\SoftSurface.shader" />
     <None Include="Assets\Externals\PolygonPrototype\Shaders\Prototype_Object.shader" />
+    <None Include="Assets\Priority Queue.dll" />
     <None Include="Assets\Externals\PolygonPrototype\Shaders\Prototype_Global.shader" />
     <None Include="Assets\Externals\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <None Include="Assets\Quirky Series Ultimate\_Shader\ToonRamp.shader" />
@@ -416,6 +424,10 @@
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Priority Queue">
+      <HintPath>Assets\Priority Queue.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">

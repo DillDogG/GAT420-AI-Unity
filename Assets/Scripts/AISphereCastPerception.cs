@@ -13,7 +13,7 @@ public class AISphereCastPerception : AIPerception
         Vector3[] directions = Utilities.GetDirectionsInCircle(numRaycast, maxAngle);
         foreach (var direction in directions)
         {
-            Ray ray = new Ray(transform.position, direction);
+            Ray ray = new Ray(transform.position, transform.rotation * direction);
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(ray.origin + ray.direction * distance, radius);
         }

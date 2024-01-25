@@ -51,7 +51,7 @@ public class AIAutonomusAgent : AIAgent
                 Vector3 open = Vector3.zero;
                 if (((AISphereCastPerception)obstaclePerception).GetOpenDirection(ref open))
                 {
-                    movement.ApplyForce(GetSteeringForce(open));
+                    movement.ApplyForce(GetSteeringForce(open) * 5);
                 }
 
             }
