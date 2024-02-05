@@ -61,24 +61,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\RotateOnScroll.cs" />
+    <Compile Include="Assets\Scripts\AINavMeshMovement.cs" />
     <Compile Include="Assets\Scripts\AIRaycastPerception.cs" />
     <Compile Include="Assets\Scripts\AIDistancePerception.cs" />
+    <Compile Include="Assets\Scripts\FSM\StateMachine.cs" />
     <Compile Include="Assets\Scripts\AIKinematicMovement.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavDijkstra.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavNodeEditor.cs" />
+    <Compile Include="Assets\Scripts\FSM\ScriptableObjectBase.cs" />
+    <Compile Include="Assets\Scripts\FSM\State.cs" />
+    <Compile Include="Assets\Scripts\FSM\AIStateMachine.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavPath.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavAStar.cs" />
     <Compile Include="Assets\Scripts\AIAgent.cs" />
+    <Compile Include="Assets\Scripts\FSM\AIStateAgent.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\QuirkySeriesDemo.cs" />
+    <Compile Include="Assets\Scripts\FSM\AIState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\AIDeathState.cs" />
     <Compile Include="Assets\Scripts\AIAutonomousAgent.cs" />
     <Compile Include="Assets\Scripts\AISphereCastPerception.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavAgent.cs" />
     <Compile Include="Assets\Scripts\Utilities.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\AIIdleState.cs" />
     <Compile Include="Assets\Scripts\AIAgentSpawner.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavNode.cs" />
     <Compile Include="Assets\Scripts\AIInspector.cs" />
     <Compile Include="Assets\Scripts\AIMovement.cs" />
     <Compile Include="Assets\Scripts\AIPerception.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\AIPatrolState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\AIAttackState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Externals\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
