@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\FSM\States\AIHitState.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\RotateOnScroll.cs" />
     <Compile Include="Assets\Scripts\AINavMeshMovement.cs" />
     <Compile Include="Assets\Scripts\AIRaycastPerception.cs" />
@@ -67,7 +68,10 @@
     <Compile Include="Assets\Scripts\FSM\StateMachine.cs" />
     <Compile Include="Assets\Scripts\AIKinematicMovement.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavDijkstra.cs" />
+    <Compile Include="Assets\Scripts\Common\BoolCondition.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavNodeEditor.cs" />
+    <Compile Include="Assets\Scripts\Common\FloatCondition.cs" />
+    <Compile Include="Assets\Scripts\Common\ValueRef.cs" />
     <Compile Include="Assets\Scripts\FSM\ScriptableObjectBase.cs" />
     <Compile Include="Assets\Scripts\FSM\State.cs" />
     <Compile Include="Assets\Scripts\FSM\AIStateMachine.cs" />
@@ -85,7 +89,9 @@
     <Compile Include="Assets\Scripts\FSM\States\AIIdleState.cs" />
     <Compile Include="Assets\Scripts\AIAgentSpawner.cs" />
     <Compile Include="Assets\Scripts\Nav\AINavNode.cs" />
+    <Compile Include="Assets\Scripts\Common\IntCondition.cs" />
     <Compile Include="Assets\Scripts\AIInspector.cs" />
+    <Compile Include="Assets\Scripts\Common\Condition.cs" />
     <Compile Include="Assets\Scripts\AIMovement.cs" />
     <Compile Include="Assets\Scripts\AIPerception.cs" />
     <Compile Include="Assets\Scripts\FSM\States\AIPatrolState.cs" />
@@ -977,8 +983,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
@@ -1021,8 +1035,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
