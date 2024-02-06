@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class AIStateAgent : AIAgent
 {
     [SerializeField] AIPerception enemyPerception;
+    //[SerializeField] AnimatorController animatorController;
     AIStateMachine stateMachine = new AIStateMachine();
 
     private void Start()
