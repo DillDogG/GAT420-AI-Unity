@@ -91,9 +91,11 @@
     <Compile Include="Assets\Scripts\Nav\AINavNode.cs" />
     <Compile Include="Assets\Scripts\Common\IntCondition.cs" />
     <Compile Include="Assets\Scripts\AIInspector.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\AIChaseState.cs" />
     <Compile Include="Assets\Scripts\Common\Condition.cs" />
     <Compile Include="Assets\Scripts\AIMovement.cs" />
     <Compile Include="Assets\Scripts\AIPerception.cs" />
+    <Compile Include="Assets\Scripts\FSM\AIStateTransition.cs" />
     <Compile Include="Assets\Scripts\FSM\States\AIPatrolState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\AIAttackState.cs" />
   </ItemGroup>

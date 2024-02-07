@@ -6,21 +6,27 @@ public class AIIdleState : AIState
 {
     public AIIdleState(AIStateAgent agent) : base(agent)
     {
+        AIStateTransition transition = new AIStateTransition(nameof(AIPatrolState));
+        transition.AddCondition(new FloatCondition(agent.timer, Condition.Predicate.LESS, 0));
+        transitions.Add(transition);
 
+        transition = new AIStateTransition(nameof(AIChaseState));
     }
 
     public override void OnEnter()
     {
-        Debug.Log("idle enter");
+        agent.movement.Stop();
+        agent.movement.Velocity = Vector3.zero;
+        agent.timer.value = Random.Range(1, 2);
     }
 
     public override void OnExit()
     {
-        Debug.Log("idle exit");
     }
 
     public override void OnUpdate()
     {
-        Debug.Log("idle update");
+        //if (transition.ToTransition()) agent.stateMachine.SetState(transition.nextState);
+
     }
 }

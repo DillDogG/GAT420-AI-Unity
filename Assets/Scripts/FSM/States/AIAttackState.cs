@@ -12,7 +12,11 @@ public class AIAttackState : AIState
 
     public override void OnEnter()
     {
-        Debug.Log("attack enter");
+        agent.movement.Stop();
+        agent.movement.Velocity = Vector3.zero;
+        agent.animator?.SetTrigger("Attack");
+
+        agent.timer.value = 2;
     }
 
     public override void OnExit()

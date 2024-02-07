@@ -4,12 +4,14 @@ using UnityEngine;
 
 public abstract class AIState : MonoBehaviour
 {
-    private AIStateAgent agent;
+    protected AIStateAgent agent;
+
 
     public AIState(AIStateAgent agent)
     {
         this.agent = agent;
     }
+    public List<AIStateTransition> transitions { get; set; } = new List<AIStateTransition>();
 
     public abstract void OnEnter();
     public abstract void OnExit();
