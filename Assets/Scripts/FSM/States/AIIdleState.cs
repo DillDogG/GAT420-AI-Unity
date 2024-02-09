@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class AIIdleState : AIState
@@ -27,6 +28,15 @@ public class AIIdleState : AIState
     public override void OnUpdate()
     {
         //if (transition.ToTransition()) agent.stateMachine.SetState(transition.nextState);
+        if (Time.time > agent.timer.value)
+        {
+            agent.stateMachine.SetState(nameof(AIPatrolState));
+        }
+        var enemies = agent.enemyPerception.GetGameObjects();
 
+        if (enemies.Length > 0)
+        {
+            agent.stateMachine.SetState(nameof(AIAttackState));
+        }
     }
 }

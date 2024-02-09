@@ -16,16 +16,18 @@ public class AIAttackState : AIState
         agent.movement.Velocity = Vector3.zero;
         agent.animator?.SetTrigger("Attack");
 
-        agent.timer.value = 2;
+        agent.timer.value = Time.time + 2;
     }
 
     public override void OnExit()
     {
-        Debug.Log("attack exit");
     }
 
     public override void OnUpdate()
     {
-        Debug.Log("attack update");
+        if (Time.time >= agent.timer.value)
+        {
+            agent.stateMachine.SetState(nameof(AIIdleState));
+        }
     }
 }

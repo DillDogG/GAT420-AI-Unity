@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AIStateMachine : MonoBehaviour
+public class AIStateMachine
 {
     private Dictionary<string, AIState> states = new Dictionary<string, AIState>();
     public AIState CurrentState { get; private set; }

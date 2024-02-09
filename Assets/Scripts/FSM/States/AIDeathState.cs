@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class AIDeathState : AIState
@@ -15,7 +16,7 @@ public class AIDeathState : AIState
         agent.movement.Velocity = Vector3.zero;
         agent.animator?.SetTrigger("Death");
 
-        agent.timer.value = 5;
+        agent.timer.value = Time.time + 4;
     }
 
     public override void OnExit()
@@ -25,6 +26,9 @@ public class AIDeathState : AIState
 
     public override void OnUpdate()
     {
-        
+        if (Time.time >= agent.timer.value)
+        {
+            GameObject.Destroy(agent.gameObject);
+        }
     }
 }

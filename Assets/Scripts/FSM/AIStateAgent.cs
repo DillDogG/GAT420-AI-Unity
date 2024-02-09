@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class AIStateAgent : AIAgent
 {
-    [SerializeField] AIPerception enemyPerception;
-    [SerializeField] public Animator animator { get; private set; }
+    public AIPerception enemyPerception;
+    public Animator animator;
 
     // parameters
     public ValueRef<float> health = new ValueRef<float>();
@@ -36,7 +36,7 @@ public class AIStateAgent : AIAgent
     private void Update()
     {
         // update parameters
-        timer.value -= Time.deltaTime;
+        //timer.value -= Time.deltaTime;
         destinationDistance.value = Vector3.Distance(transform.position, movement.Destination);
 
         var enemies = enemyPerception.GetGameObjects();
@@ -49,7 +49,7 @@ public class AIStateAgent : AIAgent
         }
 
         // from any state (health -> death)
-        if (health <= 0) stateMachine.SetState(nameof(AIDeathState));
+        if (health.value <= 0) stateMachine.SetState(nameof(AIDeathState));
 
         animator?.SetFloat("Speed", movement.Velocity.magnitude);
 

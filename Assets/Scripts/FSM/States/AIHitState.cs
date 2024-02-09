@@ -25,6 +25,9 @@ public class AIHitState : AIState
 
     public override void OnUpdate()
     {
-
+        if (Time.time >= agent.timer.value)
+        {
+            agent.stateMachine.SetState(nameof(AIIdleState));
+        }
     }
 }

@@ -26,11 +26,23 @@ public class AIChaseState : AIState
 
     public override void OnExit()
     {
-
+        agent.movement.maxSpeed = initialSpeed;
     }
 
     public override void OnUpdate()
     {
-
+        var enemies = agent.enemyPerception.GetGameObjects();
+        if (enemies.Length > 0)
+        {
+            var enemy = enemies[0];
+            if (Vector3.Distance(agent.transform.position, enemy.transform.position) < 1.25f)
+            {
+                agent.stateMachine.SetState(nameof(AIAttackState));
+            }
+        }
+        else
+        {
+            agent.stateMachine.SetState(nameof(AIIdleState));
+        }
     }
 }
