@@ -870,12 +870,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagName: Agent02
-  distance: 5
+  distance: 10
   maxAngle: 45
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  numRaycast: 6
+  numRaycast: 12
   radius: 0.5
 --- !u!114 &966849692
 MonoBehaviour:
@@ -1125,7 +1125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bd5a7f63fc85e47b99f60520ca7075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neighbors: []
+  neighbors:
+  - {fileID: 2102352241}
 --- !u!135 &1045790323
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1292,12 +1293,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagName: Agent01
-  distance: 5
+  distance: 10
   maxAngle: 45
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  numRaycast: 6
+  numRaycast: 12
   radius: 0.5
 --- !u!114 &1051002414
 MonoBehaviour:
@@ -1681,7 +1682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 782ed549fc3afb74cbf40298520291f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1756334
+      value: -9.84
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 782ed549fc3afb74cbf40298520291f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2550,7 +2551,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 782ed549fc3afb74cbf40298520291f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.9414463
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 782ed549fc3afb74cbf40298520291f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2604,6 +2605,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8701111d904e64f49aac3fe4b822a598, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 782ed549fc3afb74cbf40298520291f1, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2676,6 +2681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 1807832788}
+  - {fileID: 1045790322}
 --- !u!135 &2102352242
 SphereCollider:
   m_ObjectHideFlags: 0

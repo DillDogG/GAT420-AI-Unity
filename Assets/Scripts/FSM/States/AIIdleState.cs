@@ -12,6 +12,8 @@ public class AIIdleState : AIState
         transitions.Add(transition);
 
         transition = new AIStateTransition(nameof(AIChaseState));
+        transition.AddCondition(new BoolCondition(agent.enemySeen));
+        transitions.Add(transition);
     }
 
     public override void OnEnter()
@@ -28,15 +30,14 @@ public class AIIdleState : AIState
     public override void OnUpdate()
     {
         //if (transition.ToTransition()) agent.stateMachine.SetState(transition.nextState);
-        if (Time.time > agent.timer.value)
-        {
-            agent.stateMachine.SetState(nameof(AIPatrolState));
-        }
-        var enemies = agent.enemyPerception.GetGameObjects();
-
-        if (enemies.Length > 0)
-        {
-            agent.stateMachine.SetState(nameof(AIAttackState));
-        }
+        //if (Time.time > agent.timer.value)
+        //{
+        //    agent.stateMachine.SetState(nameof(AIPatrolState));
+        //}
+        //var enemies = agent.enemyPerception.GetGameObjects();
+        //if (enemies.Length > 0)
+        //{
+        //    agent.stateMachine.SetState(nameof(AIAttackState));
+        //}
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class AIStateAgent : AIAgent
 {
     public AIPerception enemyPerception;
+    //public AIPerception enemyRange;
     public Animator animator;
 
     // parameters
@@ -14,6 +15,7 @@ public class AIStateAgent : AIAgent
     public ValueRef<float> destinationDistance = new ValueRef<float>();
 
     public ValueRef<bool> enemySeen = new ValueRef<bool>();
+    //public ValueRef<bool> enemyInRange = new ValueRef<bool>();
     public ValueRef<float> enemyDistance = new ValueRef<float>();
     public ValueRef<float> enemyHealth = new ValueRef<float>();
 
@@ -26,6 +28,7 @@ public class AIStateAgent : AIAgent
         // add states to state machine
         stateMachine.AddState(nameof(AIIdleState), new AIIdleState(this));
         stateMachine.AddState(nameof(AIPatrolState), new AIPatrolState(this));
+        stateMachine.AddState(nameof(AIChaseState), new AIChaseState(this));
         stateMachine.AddState(nameof(AIHitState), new AIHitState(this));
         stateMachine.AddState(nameof(AIAttackState), new AIAttackState(this));
         stateMachine.AddState(nameof(AIDeathState), new AIDeathState(this));
@@ -36,7 +39,7 @@ public class AIStateAgent : AIAgent
     private void Update()
     {
         // update parameters
-        //timer.value -= Time.deltaTime;
+        timer.value -= Time.deltaTime;
         destinationDistance.value = Vector3.Distance(transform.position, movement.Destination);
 
         var enemies = enemyPerception.GetGameObjects();
