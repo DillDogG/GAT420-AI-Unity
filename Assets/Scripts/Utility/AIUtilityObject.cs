@@ -15,6 +15,8 @@ public class AIUtilityObject : MonoBehaviour // Define the AIUtilityObject class
 	[SerializeField, Tooltip("Time to use object")] public float duration; // Duration for which the object can be used
 	[SerializeField, Tooltip("Animation to play when using")] public string animationName; // Name of animation to play when using the object
 
+	[SerializeField] public Transform target;
+
 	[Header("UI")]
 	[SerializeField, Tooltip("Radius to detect agent")] float radius = 5; // Radius for detecting nearby agents
 	[SerializeField] LayerMask agentLayerMask; // Layer mask for agents
@@ -43,26 +45,30 @@ public class AIUtilityObject : MonoBehaviour // Define the AIUtilityObject class
 		}
 	}
 
-	private void Update()
-	{
-		meter.visible = false; // Hide meter by default
+    private void Update()
+    {
+        meter.visible = false; // hide meter by default
 
-		// Show object meter if near agent
-		var colliders = Physics.OverlapSphere(transform.position, radius, agentLayerMask);
-		if (colliders.Length > 0)
-		{
-			if (colliders[0].TryGetComponent(out AIUtilityAgent agent))
-			{
-				// Calculate distance score for the meter
-				float distance = 1 - Vector3.Distance(colliders[0].transform.position, transform.position) / radius;
-				score = agent.GetUtilityScore(this);
-				meter.alpha = Mathf.Max(0.5f, score * distance); // Set meter alpha based on score and distance
-				meter.visible = true; // Show the meter
-			}
-		}
-	}
+        // show object meter if near agent
+        var colliders = Physics.OverlapSphere(transform.position, radius, agentLayerMask);
+        if (colliders.Length > 0)
+        {
+            // check colliders for utility agent 
+            foreach (var collider in colliders)
+            {
+                if (collider.TryGetComponent(out AIUtilityAgent agent))
+                {
+                    // set meter alpha based on distance to agent (fade-in)
+                    float distance = 1 - Vector3.Distance(agent.transform.position, transform.position) / radius;
+                    score = agent.GetUtilityScore(this);
+                    meter.alpha = distance;
+                    meter.visible = true;
+                }
+            }
+        }
+    }
 
-	void LateUpdate()
+    void LateUpdate()
 	{
 		meter.value = score; // Update meter value with the object's score
 		meter.position = transform.position + meterOffset; // Update meter position relative to the object

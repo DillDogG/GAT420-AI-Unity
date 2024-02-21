@@ -89,7 +89,7 @@ public class AIUtilityAgent : AIAgent
 	IEnumerator UseUtilityCR(AIUtilityObject utilityObject)
 	{
 		// move to utility position
-		movement.MoveTowards(utilityObject.transform.position);
+		movement.MoveTowards(utilityObject.target.position);
 
 		// wait until at destination position
 		yield return new WaitUntil(() => Vector3.Distance(transform.position, movement.Destination) > 1);
@@ -143,6 +143,6 @@ public class AIUtilityAgent : AIAgent
 
 	AIUtilityNeed GetNeedByType(AIUtilityNeed.Type type)
 	{
-		return needs.First(need => need.type == type);
+		return needs.FirstOrDefault(need => need.type == type);
 	}
 }
