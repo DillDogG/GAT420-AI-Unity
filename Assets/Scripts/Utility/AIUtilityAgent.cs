@@ -67,7 +67,7 @@ public class AIUtilityAgent : AIAgent
 			foreach (var utilityObject in utilityObjects)
 			{
 				utilityObject.score = GetUtilityScore(utilityObject);
-				if (utilityObject.score > scoreThreshold && (activeUtilityObject == null) || utilityObject.score > activeUtilityObject.score)
+				if (utilityObject.score > scoreThreshold && (activeUtilityObject == null || utilityObject.score > activeUtilityObject.score))
 				{
 					activeUtilityObject = utilityObject;
 				}
