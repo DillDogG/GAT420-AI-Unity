@@ -51,7 +51,8 @@ public class AIUtilityAgent : AIAgent
 	void Update()
 	{
 		animator.SetFloat("Speed", movement.Velocity.magnitude);
-
+		if (happiness < 0.2) animator.SetBool("Cry", true);
+		else animator.SetBool("Cry", false);
 		// check if not using utility object, if not look for one to use
 		if (activeUtilityObject == null) 
 		{ 
